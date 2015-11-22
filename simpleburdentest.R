@@ -29,7 +29,7 @@ X<-controls_w_variant
 Y<-casesum-cases_w_variant-cases_missing_genotypes
 Z<-controlsum-controls_w_variant-controls_missing_genotypes
 
-#'alternative=greater'
+#"alternative='greater'" will give statistics for enrichment, change to "alternative='less'" for depletion
 results<-fisher.test(matrix(c(W,X,Y,Z),2,2),alternative='greater')
 genename<-gene_name
 print(genename)
